@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
-import toast, { Toaster } from 'react-hot-toast';
+import toast, {Toaster} from 'react-hot-toast';
 import "bootstrap/dist/css/bootstrap.min.css"
 
 async function loginUser(credentials) {
@@ -15,7 +15,7 @@ export default function Login({setToken}) {
         e.preventDefault();
 
         if (!(/^Надя|Надежда$/ig).test(username)) {
-            toast("Incorrect name🤪")
+            toast("Неверное имя🤪")
 
             return
         }
@@ -26,27 +26,27 @@ export default function Login({setToken}) {
         setToken(token);
     }
 
-    return(
+    return (
         <div className="Auth-form-container">
             <form className="Auth-form" onSubmit={handleSubmit}>
                 <div className="Auth-form-content">
-                    <h3 className="Auth-form-title">Sign In</h3>
+                    <h3 className="Auth-form-title">Кто ты?</h3>
                     <div className="form-group mt-3">
-                        <label>Email address</label>
+                        <label>Напиши-ка свое имя</label>
                         <input
                             className="form-control mt-1"
-                            placeholder="Enter email"
+                            placeholder=""
                             onChange={e => setUserName(e.target.value)}
                         />
                     </div>
                     <div className="d-grid gap-2 mt-3">
                         <button type="submit" className="btn btn-primary">
-                            Submit
+                            Продолжить
                         </button>
                     </div>
                 </div>
             </form>
-            <Toaster />
+            <Toaster/>
         </div>
     )
 }
