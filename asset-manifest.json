@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/herec/static/css/main.55447a9e.css",
-    "main.js": "/herec/static/js/main.8c7b1b1c.js",
+    "main.js": "/herec/static/js/main.e61131e9.js",
     "index.html": "/herec/index.html",
     "main.55447a9e.css.map": "/herec/static/css/main.55447a9e.css.map",
-    "main.8c7b1b1c.js.map": "/herec/static/js/main.8c7b1b1c.js.map"
+    "main.e61131e9.js.map": "/herec/static/js/main.e61131e9.js.map"
   },
   "entrypoints": [
     "static/css/main.55447a9e.css",
-    "static/js/main.8c7b1b1c.js"
+    "static/js/main.e61131e9.js"
   ]
 }
